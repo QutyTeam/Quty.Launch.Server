@@ -1,11 +1,16 @@
 {
-    "name": "QutyAuto",
-    "author": "QutyTeam",
-    "version": "0.0.5",
-    "preview": "preview.png",
-    "orientation": "sensor",
-    "repoUrl": "https://github.com/Sanya2104/Quty.Launch.Shell.QutyAuto",
-    "telegram": "https://t.me/QutyLaunch",
-    "minQutyLaunchVersion": "0.0.0",
-    "apiMethods": ["GetApps", "LaunchApp", "GetStatusBar"]
+    "name":  "QutyAuto",
+    "author":  "QutyTeam",
+    "preview":  "preview.png",
+    "orientation":  "sensor",
+    "repoUrl":  "https://raw.githubusercontent.com/Sanya2104/Quty.Launch.Shell.QutyAuto/main/",
+    "apiMethods":  [
+                       "GetSystemInfo",
+                       "GetApps",
+                       "LaunchApp",
+                       "GetStatusBar",
+                       "GetCoreState"
+                   ],
+    "version":  "0.1.0",
+    "minQutyLaunchVersion":  "0.0.0"
 }
