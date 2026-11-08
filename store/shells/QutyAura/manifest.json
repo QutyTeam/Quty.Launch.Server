@@ -1,0 +1,12 @@
+{
+    "name":  "QutyAura",
+    "author":  "QutyTeam",
+    "preview":  "preview.png",
+    "orientation":  "sensor",
+    "repoUrl":  "https://raw.githubusercontent.com/Sanya2104/Shell.QutyAura/main/",
+    "apiMethods":  [
+
+                   ],
+    "version":  "0.0.1",
+    "minQutyLaunchVersion":  "0.0.0"
+}
