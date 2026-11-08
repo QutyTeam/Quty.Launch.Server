@@ -8,12 +8,12 @@
             "version": "0.1.0",
             "previewUrl": "https://raw.githubusercontent.com/Sanya2104/Quty.Launch.Server/main/store/shells/QutyAuto/preview.png",
             "downloadUrl": "https://raw.githubusercontent.com/Sanya2104/Quty.Launch.Server/main/store/shells/QutyAuto/QutyAuto.qutyshell",
-            "fileSize": "2.3 MB",
+            "fileSize": "4.5 MB",
             "minQutyLaunchVersion": "0.0.0",
             "orientation": "sensor",
             "repoUrl": "https://raw.githubusercontent.com/Sanya2104/Quty.Launch.Shell.QutyAuto/main/",
             "telegram": null,
-            "datePublished": "2026-11-07"
+            "datePublished": "2026-11-08"
         },
         {
             "id": "QutyLauncher",
