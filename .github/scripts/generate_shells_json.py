@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import hashlib
 import json
 import subprocess
 import sys
@@ -39,6 +40,15 @@ def find_qutyshell(folder: Path) -> Path | None:
         if c.stem == folder.name:
             return c
     return candidates[0]
+
+
+def compute_sha256(path: Path) -> str:
+    """SHA-256 пакета — ядро сверяет его перед установкой оболочки."""
+    digest = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def get_git_commit_date(folder_path: str) -> str:
@@ -116,6 +126,7 @@ def generate() -> int:
             "previewUrl": preview_url,
             "downloadUrl": download_url,
             "fileSize": file_size,
+            "sha256": compute_sha256(qutyshell),
             "minQutyLaunchVersion": manifest.get("minQutyLaunchVersion", "0.0.0"),
             "orientation": manifest.get("orientation"),
             "repoUrl": manifest.get("repoUrl"),
