@@ -1,0 +1,8 @@
+# Подписанные артефакты: Git не должен менять их байты при commit/checkout.
+# Подпись (RSA-3072 + SHA-256) считается по точным байтам файла, а приложение
+# проверяет ровно то, что отдаёт CDN. Любая нормализация переводов строк
+# (core.autocrlf) ломает подпись: CRLF в рабочей копии против LF в репозитории.
+store/shells.json -text
+store/shells.json.sig -text
+updates/version.json -text
+updates/version.json.sig -text

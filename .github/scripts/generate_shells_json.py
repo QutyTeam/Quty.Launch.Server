@@ -139,7 +139,9 @@ def generate() -> int:
 
     output = {"shells": shells}
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    # newline="\n" — фиксированные переводы строк: файл подписывается, и на
+    # Windows, и на Linux байты должны совпадать с тем, что уйдёт на CDN.
+    with open(OUTPUT_FILE, "w", encoding="utf-8", newline="\n") as f:
         json.dump(output, f, ensure_ascii=False, indent=4)
 
     print(f"\n📦 Записано {len(shells)} оболочек в {OUTPUT_FILE}")
