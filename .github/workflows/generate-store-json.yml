@@ -27,11 +27,27 @@ jobs:
       - name: Generate shells.json
         run: python .github/scripts/generate_shells_json.py
 
+      - name: Sign shells.json
+        env:
+          CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
+        run: |
+          # Приложение проверяет подпись закреплённым ключом (политика REQUIRE),
+          # поэтому неподписанный каталог для него недействителен.
+          if [ -z "$CATALOG_SIGNING_KEY" ]; then
+            echo "::error::Секрет CATALOG_SIGNING_KEY не задан — каталог нельзя публиковать без подписи"
+            exit 1
+          fi
+          printf '%s' "$CATALOG_SIGNING_KEY" | base64 -d > "$RUNNER_TEMP/catalog-signing-key.pem"
+          openssl dgst -sha256 -sign "$RUNNER_TEMP/catalog-signing-key.pem" -out "$RUNNER_TEMP/shells.json.sig" store/shells.json
+          base64 -w 0 "$RUNNER_TEMP/shells.json.sig" > store/shells.json.sig
+          rm -f "$RUNNER_TEMP/catalog-signing-key.pem"
+          echo "Подпись: $RUNNER_TEMP/shells.json.sig"
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add store/shells.json
+          git add store/shells.json store/shells.json.sig
           if git diff --cached --quiet; then
             echo "No changes"
           else
