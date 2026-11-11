@@ -3,9 +3,9 @@
     "author":  "QutyTeam",
     "preview":  "preview.png",
     "orientation":  "sensor",
-    "repoUrl":  "https://raw.githubusercontent.com/Sanya2104/Shell.QutyAura/main/",
+    "repoUrl":  "https://github.com/QutyTeam/Shell.QutyAura",
     "apiMethods":  [
-
+                       "getCoreState"
                    ],
     "version":  "0.0.1",
     "minQutyLaunchVersion":  "0.0.0"
