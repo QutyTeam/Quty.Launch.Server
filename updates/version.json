@@ -1,10 +1,10 @@
 {
   "version": "0.0.198",
-  "versionCode": 840,
+  "versionCode": 841,
   "downloadUrl": "https://raw.githubusercontent.com/QutyTeam/Quty.Launch.Server/main/updates/apk/Quty.Launch-0.0.198.apk",
   "changelog": "Исправление багов и улучшение производительности",
-  "releaseDate": "11-11-2026",
+  "releaseDate": "12-11-2026",
   "isCritical": true,
-  "size": "4,64 MB",
-  "sha256": "e48976c7b00dbd360d1fb307d2a98eec29aaf495402949d72498b2b096e98bb7"
+  "size": "4,65 MB",
+  "sha256": "f2c5e75b36c6f0f8026f3cf5e7aee01b3dfca0b0789a0f55b99890f3a38119ca"
 }
