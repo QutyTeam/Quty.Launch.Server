@@ -14,7 +14,7 @@
             "orientation": "sensor",
             "repoUrl": "https://github.com/QutyTeam/Shell.QutyAura",
             "telegram": null,
-            "datePublished": "2026-11-12"
+            "datePublished": "2026-11-13"
         },
         {
             "id": "QutyAuto",
@@ -30,7 +30,7 @@
             "orientation": "sensor",
             "repoUrl": "https://raw.githubusercontent.com/Sanya2104/Quty.Launch.Shell.QutyAuto/main/",
             "telegram": null,
-            "datePublished": "2026-11-10"
+            "datePublished": "2026-11-13"
         },
         {
             "id": "QutyLauncher",
