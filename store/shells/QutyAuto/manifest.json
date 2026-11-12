@@ -5,12 +5,12 @@
     "orientation":  "sensor",
     "repoUrl":  "https://raw.githubusercontent.com/Sanya2104/Quty.Launch.Shell.QutyAuto/main/",
     "apiMethods":  [
-                       "GetDeviceInfo",
+                       "GetSystemInfo",
                        "GetApps",
                        "LaunchApp",
-                       "GetDeviceStatus",
-                       "GetAppState"
+                       "GetStatusBar",
+                       "GetCoreState"
                    ],
-    "version":  "0.1.1",
+    "version":  "0.1.2",
     "minQutyLaunchVersion":  "0.0.0"
 }
