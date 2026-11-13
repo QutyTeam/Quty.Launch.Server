@@ -5,16 +5,16 @@
             "name": "QutyAura",
             "displayName": "QutyAura",
             "author": "QutyTeam",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "previewUrl": "https://raw.githubusercontent.com/Sanya2104/Quty.Launch.Server/main/store/shells/QutyAura/preview.png",
             "downloadUrl": "https://raw.githubusercontent.com/Sanya2104/Quty.Launch.Server/main/store/shells/QutyAura/QutyAura.qutyshell",
-            "fileSize": "929.5 KB",
-            "sha256": "cf9e9ba6ff4822297c894e6e942b412667a03150d75cbbc4696530aa2fee734c",
+            "fileSize": "931.4 KB",
+            "sha256": "bea494fb39d1252c83cdf7d0ffd03599a4cf7af528d7fa5f757c0db5330b8877",
             "minQutyLaunchVersion": "0.0.0",
             "orientation": "sensor",
             "repoUrl": "https://github.com/QutyTeam/Shell.QutyAura",
             "telegram": null,
-            "datePublished": "2026-11-13"
+            "datePublished": "2026-11-14"
         },
         {
             "id": "QutyAuto",
