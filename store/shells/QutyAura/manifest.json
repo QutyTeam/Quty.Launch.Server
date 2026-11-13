@@ -7,6 +7,6 @@
     "apiMethods":  [
                        "GetAppState"
                    ],
-    "version":  "0.0.2",
+    "version":  "0.0.3",
     "minQutyLaunchVersion":  "0.0.0"
 }
