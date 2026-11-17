@@ -5,8 +5,9 @@
     "orientation":  "sensor",
     "repoUrl":  "https://github.com/QutyTeam/Shell.QutyAura",
     "apiMethods":  [
-                       "GetAppState"
+                       "GetAppState",
+                       "GetDeviceStatus"
                    ],
-    "version":  "0.0.5",
+    "version":  "0.0.6",
     "minQutyLaunchVersion":  "0.0.0"
 }
