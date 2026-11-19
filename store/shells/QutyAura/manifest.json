@@ -8,6 +8,6 @@
                        "GetAppState",
                        "GetDeviceStatus"
                    ],
-    "version":  "0.0.6",
+    "version":  "0.0.7",
     "minQutyLaunchVersion":  "0.0.0"
 }
